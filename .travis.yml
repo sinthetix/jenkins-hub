@@ -5,4 +5,7 @@ notifications:
       - akamen@blackducksoftware.com
       - jrichard@blackducksoftware.com
       
-install: /bin/true
+install: true
+script:
+- mvn install -DskipTests=true
+- mvn test
